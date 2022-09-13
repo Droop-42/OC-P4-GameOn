@@ -1,0 +1,31 @@
+/* ---------- Thanks modal ----------*/
+
+.thanks {
+    display: none;
+  }
+  
+  .thanks .content {
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    text-align: center ;
+  }
+  
+  .modal-body {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
+  }
+  .thanks.content span{
+    height: 90%;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+  }
