@@ -6,6 +6,7 @@ header {
 .topnav {
     overflow: hidden;
     margin: 20px;
+    padding-left: 30px;
     display: flex;
     justify-content: space-between;
     & a {
@@ -104,7 +105,7 @@ header {
       &.icon {
         display: block;
         //float: right;
-        z-index: 99;
+        z-index: 2;
         text-align: left;
       }
     }
