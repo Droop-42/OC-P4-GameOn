@@ -55,8 +55,9 @@ header {
       flex-direction: column;
       position: absolute;
       right: 3.5%;
-      top: 20px;
+      top: 10px;
       background-color: #ffffff;
+      padding: 10px;
       //border-radius: 20px;
     }
     & a {
@@ -74,18 +75,20 @@ header {
     }
     &.responsive {
       z-index: 99;
-      background-color: #ffffff;
       & .main-navbar {
-        box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.4);
+        //box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.4);
+        
       }
       & .icon {
         //float: right;
         text-align: right;
       }
-      & a {
+      & .menu a {
         float: none;
         display: block;
         text-align: left;
+        box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.4);
+        border-radius: 15px;
       }
     }
   }
@@ -97,7 +100,7 @@ header {
     & .main-navbar {
       position: absolute;
       left: 3.5%;
-      top: 80px;
+      top: 60px;
       background-color: #ffffff;
     }
     & a {
