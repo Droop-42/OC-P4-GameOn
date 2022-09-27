@@ -88,14 +88,14 @@ const checkFirstName = () =>{
   condition = firstName.value === "" || firstName.value.length < 2;
   return validateEntry(condition, "Veuillez indiquer votre prénom", 0);   
 }
-//check first name entry
+//check last name entry
 const checkLastName = () =>{
   condition = last.value === "" || last.value.length < 2;
   return validateEntry(condition, "Veuillez indiquer votre nom",1);
 }
-//check last name entry
+//check email entry
 const checkEmail = () =>{
-  condition = email.value === "" || email.value.indexOf("@", 0) < 0 || email.value.indexOf(".", 0) < 0;
+  condition = email.value === "" || email.value.indexOf("@", 0) < 0 || email.value.indexOf(".", 0) < 0; //Find the first occurrence of "@"/".", starting at position 0
   return validateEntry(condition, "Mettez une adresse email valide.",2);
 }
 //check Birthdate entry
@@ -119,7 +119,7 @@ const checkAccept = () =>{
   return validateEntry(condition, "Veuillez accepter les conditions.",6);
 }
 
-// check if all entries are valid and return true if so
+//Evaluate if all entries are valid
 function validate()                                    
 {     
   c1=checkFirstName(); c2=checkLastName(); c3=checkEmail(); c4=checkBirthdate(); c5=checkQuantity(); c6=checkLocation(); c7=checkAccept(); //run all functions

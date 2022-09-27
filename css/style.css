@@ -209,7 +209,7 @@ header {
 
 .header-logo {
   float: left;
-  width: 250px;
+  width: 240px;
 }
 
 .logo {
@@ -263,7 +263,7 @@ header {
   .topnav .main-navbar {
     position: absolute;
     left: 3.5%;
-    top: 60px;
+    top: -1px;
     background-color: #ffffff;
   }
   .topnav a {
@@ -272,17 +272,15 @@ header {
   .topnav a.icon {
     display: block;
     z-index: 2;
-    text-align: left;
+    text-align: right;
   }
   .topnav.responsive {
-    z-index: 99;
+    z-index: 98;
     background-color: #ffffff;
   }
-  .topnav.responsive .icon {
-    text-align: left;
-  }
   .header-logo {
-    width: 200px;
+    z-index: 98;
+    width: 150px;
   }
 }
 .bground {
